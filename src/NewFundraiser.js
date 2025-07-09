@@ -35,7 +35,7 @@ const [ web3, setWeb3 ] = useState(null)
 useEffect(() => {
   const init = async() => {
     try {
-      const web3 = await getWeb3();
+      const web3 = new Web3(new Web3.providers.HttpProvider("http://ec2-3-129-52-168.us-east-2.compute.amazonaws.com:8545"));
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = FactoryContract.networks[networkId];
       const accounts = await web3.eth.getAccounts();

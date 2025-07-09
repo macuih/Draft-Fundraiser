@@ -78,7 +78,8 @@ const handleSubmit = async () => {
     bio,
     beneficiary,
     custodian
-  ).send({ from: accounts[0] })
+  ).send({ from: accounts[0],
+    gas: 3000000 })
 
   alert('Successfully created fundraiser')
 }

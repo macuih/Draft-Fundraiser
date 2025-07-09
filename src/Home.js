@@ -21,7 +21,7 @@ const Home = () => {
   const [ contract, setContract] = useState(null)
   const [ accounts, setAccounts ] = useState(null)
   const [ funds, setFunds ] = useState([])
-  const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
+  const web3 = new Web3(new Web3.providers.HttpProvider('http://ec2-3-129-52-168.us-east-2.compute.amazonaws.com:8545'))
 
   useEffect(() => {
     init()

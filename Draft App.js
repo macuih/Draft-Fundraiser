@@ -23,7 +23,7 @@ const App = () => {
       try {
         // Get network provider and web3 instance.
         // const web3 = await getWeb3();
-        const web 3 = new Web3(new Web3.providers.HttpProvider("http://ec2-3-129-52-168.us-east-2.compute.amazonaws.com:8545"))
+        const web3 = new Web3(new Web3.providers.HttpProvider("http://ec2-3-129-52-168.us-east-2.compute.amazonaws.com:8545"))
         // Use web3 to get the user's accounts.
         const accounts = await web3.eth.getAccounts();
 

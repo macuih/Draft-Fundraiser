@@ -39,7 +39,7 @@ const Home = () => {
       setContract(instance)
       setAccounts(accounts)
 
-      const funds = await instance.methods.fundraisers().call()
+      const funds = await instance.methods.fundraisers(10, 0).call();
       setFunds(funds)
     }
     catch(error) {

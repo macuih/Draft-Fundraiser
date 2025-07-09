@@ -129,7 +129,7 @@ const FundraiserCard = (props) => {
 
       const isUser = accounts[0]
       const isOwner = await instance.methods.owner().call()
-      if (isOwner === accounts[[0]]) {
+      if (isOwner === accounts[0]) {
         setIsOwner(true)
       }
     }
